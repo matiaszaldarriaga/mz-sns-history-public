@@ -1,0 +1,52 @@
+name: Data correction
+about: Report a possible data error for a scholar, visit, paper, or career record
+title: "[Data issue] "
+labels: ["data-bug"]
+body:
+  - type: textarea
+    id: what_wrong
+    attributes:
+      label: What looks wrong?
+      placeholder: Briefly describe the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should it be?
+      placeholder: Describe the expected value.
+    validations:
+      required: true
+
+  - type: input
+    id: scholar_name
+    attributes:
+      label: Scholar name
+      placeholder: e.g., Jane Doe
+    validations:
+      required: false
+
+  - type: input
+    id: scholar_id
+    attributes:
+      label: Scholar ID (if known)
+      placeholder: e.g., 1367
+    validations:
+      required: false
+
+  - type: input
+    id: snapshot
+    attributes:
+      label: Snapshot date/version
+      placeholder: e.g., 2026-02-22
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source or evidence
+      placeholder: Add URL(s) or citation(s).
+    validations:
+      required: false

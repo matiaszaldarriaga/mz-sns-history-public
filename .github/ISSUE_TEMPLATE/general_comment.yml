@@ -1,0 +1,20 @@
+name: General comment
+about: Leave feedback, suggestions, or questions
+title: "[Comment] "
+labels: ["community-comment"]
+body:
+  - type: textarea
+    id: comment
+    attributes:
+      label: Comment
+      placeholder: Share your feedback.
+    validations:
+      required: true
+
+  - type: input
+    id: context
+    attributes:
+      label: Context (optional)
+      placeholder: scholar name / page / link
+    validations:
+      required: false
